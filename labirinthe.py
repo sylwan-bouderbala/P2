@@ -9,4 +9,18 @@ class Lab(object):
 			for j in range(size):
 				positions.append((i,j))
 
-		self.reglage=
+		file=self.reglage.read()
+		liste2=[]
+		for caracters in file:
+			if caracters != "\n":
+			    liste2.append()
+			else :
+				pass 
+		for x in range(size*size):
+			self.format[positions[x]]=liste2[x]
+	def affichermap(self):
+		
+
+			
+
+
