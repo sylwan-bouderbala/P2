@@ -1,3 +1,0 @@
-pyloti = [1,2,3,4]
-print(pyloti)
-print(pyloti)
