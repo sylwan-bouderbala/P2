@@ -1,40 +1,41 @@
 import os 
 
-
 class Lab(object):
-	def __init__(self,reglage,size=15):
+	def __init__(self, size=15):
+		self.size = size
 		self.format={}
-		self.reglage=reglage.read()
-		self.size=size
-	def initialisermap(self,size=15):
-		positions=[]
+	def init(self,size=15):
+		liste2=[]
+		liste3=[]
+		with open('lab.txt','r') as filereglage:
+				liste2=filereglage.read()
+				for i in liste2:
+					if i != "\n":
+						liste3.append(i)
+					else :
+						pass
+
+		listeplace=[]
 		for i in range(15):
 			for j in range(15):
-				positions.append((i,j))
+				listeplace.append((i,j))
+		print (liste3)
+		print (listeplace)
 
-		self.reglage
-		liste2=[]
-		for caracters in self.reglage:
-			if caracters != "\n":
-			    liste2.append(caracters+" ")
-			else :
-				pass 
-		print(liste2)
-             
-		for x in range(size*size):
-			self.format[positions[x]]=liste2[x]
-		print(self.format)
-
-	def affichermap(self,size=15):
-		for i in range(size):
-			listeaffichage=""
-			print(listeaffichage)
-			for j in range(size):
-				listeaffichage= listeaffichage + self.format[(i,j)] 
-			print(listeaffichage)
-
-
-reglage=open("reglage.txt","r")			
-Lab=Lab(reglage)
-Lab.initialisermap()
-Lab.affichermap()
+		for i in range(15**2):
+			self.format[listeplace[i]]=liste3[i]
+	def affichage(self):
+		listeaffichage=""
+		for i in range(15):
+			for j in range(16):
+				if j != 15  :
+				  listeaffichage= listeaffichage+self.format[(i,j)]
+				else:
+					listeaffichage=listeaffichage + "\n"
+		print listeaffichage
+		
+		
+tab= Lab()
+tab.init()
+print (tab.format)
+tab.affichage()
