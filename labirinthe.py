@@ -32,7 +32,3 @@ class Lab(object):
 					listeaffichage=listeaffichage + "\n"
 		print listeaffichage
 		
-		
-tab= Lab()
-tab.init()
-tab.affichage()
