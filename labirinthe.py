@@ -19,8 +19,6 @@ class Lab(object):
 		for i in range(15):
 			for j in range(15):
 				listeplace.append((i,j))
-		print (liste3)
-		print (listeplace)
 
 		for i in range(15**2):
 			self.format[listeplace[i]]=liste3[i]
@@ -29,7 +27,7 @@ class Lab(object):
 		for i in range(15):
 			for j in range(16):
 				if j != 15  :
-				  listeaffichage= listeaffichage+self.format[(i,j)]
+				  listeaffichage= listeaffichage+self.format[(i,j)]+" "
 				else:
 					listeaffichage=listeaffichage + "\n"
 		print listeaffichage
@@ -37,5 +35,4 @@ class Lab(object):
 		
 tab= Lab()
 tab.init()
-print (tab.format)
 tab.affichage()
