@@ -10,6 +10,3 @@ class Perso(object):
 			self.id==1
 		if 2 in tab.values():
 			self.id==2
-			
-	def position(self,tab):
-		for cle,valeur in tab.items():  
