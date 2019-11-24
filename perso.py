@@ -12,5 +12,4 @@ class Perso(object):
 			self.id==2
 			
 	def position(self,tab):
-		for 
-
+		for cle,valeur in tab.items():  

@@ -30,5 +30,4 @@ class Lab(object):
 				  listeaffichage= listeaffichage+self.format[(i,j)]+" "
 				else:
 					listeaffichage=listeaffichage + "\n"
-		print listeaffichage
-		
+		print(listeaffichage)
