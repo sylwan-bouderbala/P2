@@ -10,3 +10,8 @@ class Perso(object):
 			self.id==1
 		if 2 in tab.values():
 			self.id==2
+	def positions(self, tab):
+		for i,v in tab.items():
+			if v == 1 :
+				print(i)
+		
