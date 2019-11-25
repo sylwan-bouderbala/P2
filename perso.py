@@ -1,17 +1,17 @@
-import labirinthe
 import os
+
+import labirinthe
+
 
 class Perso(object):
 	def __init__(self):
 		self.position=()
 
-	def id(self,tab):
-		if 1 in tab.values():
-			self.id==1
-		if 2 in tab.values():
-			self.id==2
-	def positions(self, tab):
+	def ids(self,tab):
 		for i,v in tab.items():
-			if v == 1 :
-				print(i)
-		
+			if v==1:
+				self.position=i
+				self.id=1
+			if v==2:
+				self.position=i
+				self.id=2
