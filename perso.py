@@ -10,3 +10,4 @@ class Perso(object):
 		for i,v in tab.items():
 			if v==tag:
 				self.position=(i)
+
