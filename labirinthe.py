@@ -19,8 +19,12 @@ class Lab(object):
 		listeaffichage=""
 		for i in range(size):
 			for j in range(size):
-				if j != 15  :
+				if j != 14  :
 				  listeaffichage= listeaffichage+self.format[(i,j)]+" "
 				else:
-					listeaffichage=listeaffichage + "\n"
+					listeaffichage=listeaffichage +self.format[(i,j)]+ "\n"
 		print(listeaffichage)
+
+lab=Lab()
+lab.initialisation()
+lab.affichage()
