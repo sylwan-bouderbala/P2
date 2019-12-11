@@ -24,3 +24,8 @@ class Lab(object):
 				else:
 					listeaffichage=listeaffichage + "\n"
 		print(listeaffichage)
+
+lab=Lab()
+
+lab.initialisation()
+lab.affichage()
