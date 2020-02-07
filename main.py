@@ -1,11 +1,10 @@
 import os
-import labirinthe as Lab
+import labirinthe
 import perso 
 
-tab= Lab.Lab()
-tab.init()
-tab.affichage()
-tag_gentil='1'
-perso=perso.Perso()
-perso.positionner(tab.format,tag_gentil)
-
+Lab = labirinthe.Lab()
+Lab.initialisation()
+labirinthe.affichage(Lab.format,15)
+pi = perso.Perso(Lab.mur,Lab.listevide,Lab.gentil_position,Lab.mechan)
+pi.move()
+labirinthe.affichage(Lab.format,15)

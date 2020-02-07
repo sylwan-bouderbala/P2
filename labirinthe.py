@@ -1,16 +1,21 @@
 import os 
 
 class Lab(object):
-	def __init__(self, size=15):
-		self.size = size
+	def __init__(self):
+		self.size= 0 #à remplacer par 0
 		self.format={}
-	def initialisation(self,size=15):
+	def initsize(self):
+		with open('lab.txt','r') as po :
+			for i in po.read():
+				if i=="\n":
+					self.size=1+self.size
+	def initialisation(self):
 		self.mur=[]
 		self.listevide=[]
 		self.gentil_position=()
 		self.mechant=()
 		with open('lab.txt','r') as lab:
-			for i in range(size):
+			for i in range(self.size):
 				x=0
 				for j in lab.readline():
 						if j != '\n':
@@ -27,12 +32,14 @@ class Lab(object):
 						else:
 							pass
 		print(self.format)
-	def affichage(self,size=15):
+def affichage(tab,size):
 		listeaffichage=""
 		for i in range(size):
 			for j in range(size):
-				if j != 14  :
-				  listeaffichage= listeaffichage+self.format[(i,j)]+" "
+				if j != size-1  :
+				  listeaffichage= listeaffichage+tab[(i,j)]+" "
 				else:
-					listeaffichage=listeaffichage +self.format[(i,j)]+ "\n"
+					listeaffichage=listeaffichage +tab[(i,j)]+ "\n"
 		print(listeaffichage)
+
+		
