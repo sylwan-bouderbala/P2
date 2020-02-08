@@ -2,8 +2,10 @@ import os
 
 class Lab(object):
 	def __init__(self):
-		attributes()
-		initialisation()
+		self.attributes()
+		self.size()
+		self.initialisation()
+		self.affichage()
 	def move():
 		pass
 	def initsize(self):
@@ -19,21 +21,22 @@ class Lab(object):
 						if j != '\n':
 							self.format[(i,x)]=j
 							x=x+1
-							sub_init(i,j,x)
+						self.sub_init(i,j,x)
+						
 						else:
 							pass
 		print(self.format)
-    def affichage(tab,size):
+    def affichage(self):
 		listeaffichage=""
-		for i in range(size):
-			for j in range(size):
+		for i in range(self.size):
+			for j in range(self.size):
 				if j != size-1  :
-				  listeaffichage= listeaffichage+tab[(i,j)]+" "
+				  listeaffichage= listeaffichage+self.format[(i,j)]+" "
 				else:
-					listeaffichage=listeaffichage +tab[(i,j)]+ "\n"
+				  listeaffichage=listeaffichage +self.format[(i,j)] + "\n"
 		print(listeaffichage)
 
-	def sub_init(i,j,x):
+	def sub_init(self,i,j,x):
 		if j=='.':
 			self.listevide.append((i,x))
 		if j=='x':
