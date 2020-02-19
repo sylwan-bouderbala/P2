@@ -3,11 +3,11 @@ import os
 class Lab(object):
 	def __init__(self):
 		self.attributes()
-		self.size()
+		self.initsize()
 		self.initialisation()
 		self.affichage()
-	def move():
-		pass
+	#def move():
+	#	pass
 	def initsize(self):
 		with open('lab.txt','r') as po :
 			for i in po.read():
@@ -21,16 +21,15 @@ class Lab(object):
 						if j != '\n':
 							self.format[(i,x)]=j
 							x=x+1
-						self.sub_init(i,j,x)
-						
+							self.sub_init(i,j,x)
 						else:
 							pass
 		print(self.format)
-    def affichage(self):
+	def affichage(self):
 		listeaffichage=""
 		for i in range(self.size):
 			for j in range(self.size):
-				if j != size-1  :
+				if j != self.size-1:
 				  listeaffichage= listeaffichage+self.format[(i,j)]+" "
 				else:
 				  listeaffichage=listeaffichage +self.format[(i,j)] + "\n"
@@ -45,10 +44,12 @@ class Lab(object):
 			self.gentil_position=(i,x)
 		if j=='2':
 			self.mechant=(i,x)
-    def attributes(self):
+	def attributes(self):
 		self.mur=[]
 		self.listevide=[]
-		self.gentil_position=()
-		self.mechant=(
-		self.size= 0 #à remplacer par 0
+		self.gentil_position=[]
+		self.mechant=()
+		self.size=0
 		self.format={}
+
+Lab=Lab()
