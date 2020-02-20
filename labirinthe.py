@@ -3,17 +3,19 @@ import os
 class Lab(object):
 	def __init__(self):
 		self.attributes()
-		self.initsize()
 		self.initialisation()
-		self.affichage()
-	#def move():
-	#	pass
+	def move(self,direction):
+		if direction == 1 :
+			try :
+				if self.gentil_position in self.listevide :
+				   pass 
 	def initsize(self):
 		with open('lab.txt','r') as po :
 			for i in po.read():
 				if i=="\n":
 					self.size=1+self.size
 	def initialisation(self):
+		self.initsize()
 		with open('lab.txt','r') as lab:
 			for i in range(self.size):
 				x=0
@@ -41,7 +43,7 @@ class Lab(object):
 		if j=='x':
 			self.mur.append((i,x))
 		if j=='1':
-			self.gentil_position=(i,x)
+			self.gentil_position=[i,x]
 		if j=='2':
 			self.mechant=(i,x)
 	def attributes(self):

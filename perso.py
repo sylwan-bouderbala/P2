@@ -5,7 +5,7 @@ import labirinthe
 
 class Perso(object):
 	def __init__(self,positon):
-		self.position = position
+		self.position = positon
 
 
 		
