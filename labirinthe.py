@@ -1,4 +1,7 @@
-import os 
+import os
+
+import HEAD as HEAD
+
 import perso
 
 class Lab(object):
@@ -7,16 +10,13 @@ class Lab(object):
 	def __init__(self):
 		self.attributes()
 		self.initialisation()
-<<<<<<< HEAD
 	def move():
 		pass
-=======
 	def move(self,direction):
 		if direction == 1 :
 			try :
 				if self.gentil_position in self.listevide :
-				   pass 
->>>>>>> 94cf410193dcbe0822ce1c037338143643bef29e
+				   pass
 	def initsize(self):
 		with open('lab.txt','r') as po :
 			for i in po.read():
@@ -31,7 +31,6 @@ class Lab(object):
 						if j != '\n':
 							self.format[(i,x)]=j
 							x=x+1
-<<<<<<< HEAD
 							
 							if j=='.' :
 								self.listevide.append((i,x))
