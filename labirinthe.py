@@ -1,18 +1,13 @@
 import os
-import perso
+from perso import Perso
 
 class Lab(object):
     def __init__(self):
         self.attributes()
         self.initialisation()
 
-    def move(self, inputage, nbrobject):
-        if nbrobject!=4:
-            if inputage==1:
-                if self.mcgiver[1] -1 != '.':
-                    print('c\'est un mur')
-
-
+    def move(self, inputage, ):
+        self.mouvements(inputage)
 
     def initsize(self):
         with open('lab.txt', 'r') as po:
@@ -50,7 +45,7 @@ class Lab(object):
         if j == 'x':
             self.mur.append((i, x))
         if j == '1':
-            self.mcgiver = perso.Perso((i,x))
+            self.mcgiver = Perso([i,x])
         if j == '2':
             self.mechant = (i, x)
 
@@ -61,33 +56,34 @@ class Lab(object):
         self.mechant = ()
         self.size = 0
         self.format = {}
+
     def mouvements(self,inputage):
         if inputage == 1:
-            if (self.mcgiver[1] - 1) <= self.size - 1:
-                self.format[tuple(self.mcgiver.)] = '.'
-                self.mcgiver[1] -= 1
-                self.format[tuple(self.mcgiver)] = '1'
+            if (self.mcgiver.position[1] - 1) <= self.size - 1:
+                self.format[tuple(self.mcgiver.position)] = '.'
+                self.mcgiver.position[1] -= 1
+                self.format[tuple(self.mcgiver.position)] = '1'
             else:
                 print('erreur hors du tableau')
         if inputage == 2:
-            if (self.mcgiver[0] + 1) <= self.size - 1:
+            if (self.mcgiver.position[0] + 1) <= self.size - 1:
                 self.format[tuple(self.mcgiver.position)] = '.'
-                self.mcgiver[0] += 1
-                self.format[tuple(self.mcgiver)] = '1'
+                self.mcgiver.position[0] += 1
+                self.format[tuple(self.mcgiver.position)] = '1'
             else:
                 print('erreur hors du tableau')
         if inputage == 3:
-            if (self.mcgiver[1] + 1) <= self.size - 1:
-                self.format[tuple(self.mcgiver)] = '.'
-                self.mcgiver[1] += 1
-                self.format[tuple(self.mcgiver)] = '1'
+            if (self.mcgiver.position[1] + 1) <= self.size - 1:
+                self.format[tuple(self.mcgiver.position)] = '.'
+                self.mcgiver.position[1] += 1
+                self.format[tuple(self.mcgiver.position)] = '1'
             else:
                 print('erreur hors du tableau')
         if inputage == 5:
-            if (self.mcgiver[0] - 1) <= self.size - 1:
-                self.format[tuple(self.mcgiver)] = '.'
-                self.mcgiver[0] -= 1
-                self.format[tuple(self.mcgiver)] = '1'
+            if (self.mcgiver.position[0] - 1) <= self.size - 1:
+                self.format[tuple(self.mcgiver.position)] = '.'
+                self.mcgiver.position[0] -= 1
+                self.format[tuple(self.mcgiver.position)] = '1'
             else:
                 print('erreur hors du tableau')
         else:
@@ -96,5 +92,5 @@ class Lab(object):
 
 Lab = Lab()
 Lab.Afficher()
-Lab.move(4, 0)
+Lab.move(1)
 Lab.Afficher()
