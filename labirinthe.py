@@ -6,8 +6,24 @@ class Lab(object):
         self.attributes()
         self.initialisation()
 
-    def move(self, inputage, ):
-        self.mouvements(inputage)
+    def move(self, inputage):
+        try:
+            indexchange=self.indexchange(inputage)
+            if self.format[tuple(indexchange)]=='.':
+                self.mouvements(inputage)
+            elif self.format[tuple(indexchange)]=='x':
+                print('c"est un mur')
+            elif self.format[tuple(indexchange)]=='2':
+                if self.mcgiver.objectnumber==4:
+                    self.mouvements(inputage)
+                else :
+                    print('il te faut 4 objet')
+            elif self.format[tuple(indexchange)] in self.objet:
+                self.mouvements(inputage)
+                self.mcgiver.addobject()
+        except KeyError:
+            print('hors du tableau')
+
 
     def initsize(self):
         with open('lab.txt', 'r') as po:
@@ -27,7 +43,6 @@ class Lab(object):
                         x = x + 1
                     else:
                         pass
-        print(self.format)
 
     def Afficher(self):
         listeaffichage = ""
@@ -42,15 +57,18 @@ class Lab(object):
     def sub_init(self, i, j, x):
         if j == '.':
             self.listevide.append((i, x))
-        if j == 'x':
+        elif j == 'x':
             self.mur.append((i, x))
-        if j == '1':
-            self.mcgiver = Perso([i,x])
-        if j == '2':
+        elif j == '1':
+            self.mcgiver = Perso([i, x])
+        elif j == '2':
             self.mechant = (i, x)
+        else :
+            self.objet.append((i,x))
 
     def attributes(self):
         self.mur = []
+        self.objet=[]
         self.listevide = []
         self.mcgiver = []
         self.mechant = ()
@@ -88,9 +106,16 @@ class Lab(object):
                 print('erreur hors du tableau')
         else:
             print("selectionner un mouvement")
-
-
-Lab = Lab()
-Lab.Afficher()
-Lab.move(1)
-Lab.Afficher()
+    def indexchange(self,inputage):
+        if inputage == 1:
+            return [self.mcgiver.position[0],self.mcgiver.position[1]-1]
+        if inputage ==2 :
+            return [self.mcgiver.position[0]+1,self.mcgiver.position[1]]
+        if inputage == 3:
+            return [self.mcgiver.position[0],self.mcgiver.position[1]+1]
+        if inputage== 5:
+            return [self.mcgiver.position[0]-1,self.mcgiver.position[1]]
+    def win (self):
+        return True
+        if self.mcgiver.position==self.mechant:
+            return False
