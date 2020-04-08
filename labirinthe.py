@@ -1,12 +1,15 @@
-import os
+
 from perso import Perso
 
 class Lab(object):
     def __init__(self):
         self.attributes()
         self.initialisation()
+        print(self.objet)
 
     def move(self, inputage):
+        print(self.mcgiver.position )
+        print(self.mechant)
         try:
             indexchange=self.indexchange(inputage)
             if self.format[tuple(indexchange)]=='.':
@@ -18,7 +21,7 @@ class Lab(object):
                     self.mouvements(inputage)
                 else :
                     print('il te faut 4 objet')
-            elif self.format[tuple(indexchange)] in self.objet:
+            elif tuple(indexchange) in self.objet:
                 self.mouvements(inputage)
                 self.mcgiver.addobject()
         except KeyError:
@@ -115,7 +118,13 @@ class Lab(object):
             return [self.mcgiver.position[0],self.mcgiver.position[1]+1]
         if inputage== 5:
             return [self.mcgiver.position[0]-1,self.mcgiver.position[1]]
+
     def win (self):
-        return True
+        print(self.mcgiver.position )
+        print(self.mechant)
         if self.mcgiver.position==self.mechant:
             return False
+        else:
+            return True
+
+
