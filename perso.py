@@ -5,10 +5,10 @@ class Perso(object):
         self.position = positon
         self.objectnumber=0
 
-    def addobject(self):
+    def Addobject(self):
         self.objectnumber+=1
 perso = Perso([0])
 print(perso.objectnumber)
-perso.addobject()
+perso.Addobject()
 print(perso.objectnumber)
 

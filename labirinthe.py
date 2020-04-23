@@ -5,27 +5,25 @@ class Lab(object):
     def __init__(self):
         self.attributes()
         self.initialisation()
-        print(self.objet)
 
     def move(self, inputage):
-        print(self.mcgiver.position )
-        print(self.mechant)
+        Indexchange = self.indexchange(inputage)
         try:
-            indexchange=self.indexchange(inputage)
-            if self.format[tuple(indexchange)]=='.':
-                self.mouvements(inputage)
-            elif self.format[tuple(indexchange)]=='x':
+            if self.format[tuple(Indexchange)]=='.':
+                self.Movements(inputage)
+            if self.format[tuple(Indexchange)]=='x':
                 print('c"est un mur')
-            elif self.format[tuple(indexchange)]=='2':
+            if self.format[tuple(Indexchange)]=='2':
                 if self.mcgiver.objectnumber==4:
-                    self.mouvements(inputage)
+                    self.Movements(inputage)
                 else :
                     print('il te faut 4 objet')
-            elif tuple(indexchange) in self.objet:
-                self.mouvements(inputage)
+            if tuple(Indexchange) in self.objet:
+                self.Movements(inputage)
                 self.mcgiver.addobject()
-        except KeyError:
-            print('hors du tableau')
+
+        except:
+            print("c'est hors du tableau ")
 
 
     def initsize(self):
@@ -47,15 +45,15 @@ class Lab(object):
                     else:
                         pass
 
-    def Afficher(self):
-        listeaffichage = ""
+    def Display(self):
+        ListeAffichage = ""
         for i in range(self.size):
             for j in range(self.size):
                 if j != self.size - 1:
-                    listeaffichage = listeaffichage + self.format[(i, j)] + " "
+                    ListeAffichage = ListeAffichage + self.format[(i, j)] + " "
                 else:
-                    listeaffichage = listeaffichage + self.format[(i, j)] + "\n"
-        print(listeaffichage)
+                    ListeAffichage = ListeAffichage + self.format[(i, j)] + "\n"
+        print(ListeAffichage)
 
     def sub_init(self, i, j, x):
         if j == '.':
@@ -78,32 +76,32 @@ class Lab(object):
         self.size = 0
         self.format = {}
 
-    def mouvements(self,inputage):
+    def Movements(self, inputage):
         if inputage == 1:
             if (self.mcgiver.position[1] - 1) <= self.size - 1:
                 self.format[tuple(self.mcgiver.position)] = '.'
-                self.mcgiver.position[1] -= 1
+                self.mcgiver.position[1] =self.mcgiver.position[1]-1
                 self.format[tuple(self.mcgiver.position)] = '1'
             else:
                 print('erreur hors du tableau')
         if inputage == 2:
             if (self.mcgiver.position[0] + 1) <= self.size - 1:
                 self.format[tuple(self.mcgiver.position)] = '.'
-                self.mcgiver.position[0] += 1
+                self.mcgiver.position[0] =self.mcgiver.position[0] + 1
                 self.format[tuple(self.mcgiver.position)] = '1'
             else:
                 print('erreur hors du tableau')
         if inputage == 3:
             if (self.mcgiver.position[1] + 1) <= self.size - 1:
                 self.format[tuple(self.mcgiver.position)] = '.'
-                self.mcgiver.position[1] += 1
+                self.mcgiver.position[1] = self.mcgiver.position[1] + 1
                 self.format[tuple(self.mcgiver.position)] = '1'
             else:
                 print('erreur hors du tableau')
         if inputage == 5:
             if (self.mcgiver.position[0] - 1) <= self.size - 1:
                 self.format[tuple(self.mcgiver.position)] = '.'
-                self.mcgiver.position[0] -= 1
+                self.mcgiver.position[0] =self.mcgiver.position[0]-1
                 self.format[tuple(self.mcgiver.position)] = '1'
             else:
                 print('erreur hors du tableau')
@@ -119,10 +117,8 @@ class Lab(object):
         if inputage== 5:
             return [self.mcgiver.position[0]-1,self.mcgiver.position[1]]
 
-    def win (self):
-        print(self.mcgiver.position )
-        print(self.mechant)
-        if self.mcgiver.position==self.mechant:
+    def win(self):
+        if tuple(self.mcgiver.position)==self.mechant:
             return False
         else:
             return True
