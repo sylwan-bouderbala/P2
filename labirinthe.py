@@ -122,5 +122,3 @@ class Lab(object):
             return False
         else:
             return True
-
-

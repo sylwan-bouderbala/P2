@@ -1,5 +1,10 @@
+
+# Ignoring directories
+# Both the directory itself and its contents will be ignored.
 /.idea
 /__pycache__
+
+
 /labirinthe.pyc
 /main.pyc
 /perso.pyc
