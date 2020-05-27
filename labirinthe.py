@@ -25,7 +25,6 @@ class Lab(object):
         except:
             print("c'est hors du tableau ")
 
-
     def initsize(self):
         with open('lab.txt', 'r') as po:
             for i in po.read():
@@ -107,6 +106,7 @@ class Lab(object):
                 print('erreur hors du tableau')
         else:
             print("selectionner un mouvement")
+
     def indexchange(self,inputage):
         if inputage == 1:
             return [self.mcgiver.position[0],self.mcgiver.position[1]-1]
