@@ -4,16 +4,15 @@ import pygame
 
 class dysplay():
     def __init__(self):
-        pygame.init()
-        self.ecran = pygame.display.set_mode((600, 600))
         McGiversrc = 'images/MacGyver.png'
         Mechantsrc='images/Gardien.png'
+        floor='images/floor-tiles-20x20.png'
         Wallsrc='images/structures.png'
         seringuesrc='images/seringue.png'
         tubesrc="images/tube_plastique.png"
         ethersrc="images/ether.png"
 
-
+        self.floor=pygame.image.load(floor).convert()
         self.McGiver=pygame.image.load(McGiversrc).convert()
         self.Mechant=pygame.image.load(Mechantsrc).convert()
         self.Wall=pygame.image.load(Wallsrc).convert()
