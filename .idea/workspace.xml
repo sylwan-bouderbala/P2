@@ -20,6 +20,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="66662f20-ea52-4bfd-aafb-a8506a0c4f32" name="Default Changelist" comment="">
+<<<<<<< HEAD
       <change afterPath="$PROJECT_DIR$/test.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/graph.py" beforeDir="false" afterPath="$PROJECT_DIR$/graph.py" afterDir="false" />
@@ -32,6 +33,27 @@
       <change beforePath="$PROJECT_DIR$/lab.txt" beforeDir="false" afterPath="$PROJECT_DIR$/lab.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/labirinthe.py" beforeDir="false" afterPath="$PROJECT_DIR$/labirinthe.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+=======
+      <change afterPath="$PROJECT_DIR$/graph.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/Gardien.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/MacGyver.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/Thumbs.db" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/aiguille.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/decorations.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/equipment-32x32.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/ether.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/floor-tiles-20x20.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/items.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/license.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/lifebar-32x32.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/personnages.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/seringue.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/structures.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/tile-crusader-logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/tube_plastique.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/labirinthe.py" beforeDir="false" afterPath="$PROJECT_DIR$/labirinthe.py" afterDir="false" />
+>>>>>>> parent of 3ff2f66... Dernier Pygame 23/04/20
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,9 +69,6 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/main.py" root0="SKIP_INSPECTION" />
   </component>
   <component name="JupyterTrust" id="cf9d975a-19ee-4bb4-9fc4-034dc51da0a8" />
   <component name="ProjectId" id="1YKqDCZcpPzagLVZdJ6xEdmJZaF" />
@@ -75,7 +94,7 @@
       <recent name="C:\Users\sylwa\PycharmProjects\P2\images" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.main">
+  <component name="RunManager" selected="Python.graph">
     <configuration name="graph" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="P2" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -166,10 +185,14 @@
     </configuration>
     <recent_temporary>
       <list>
+<<<<<<< HEAD
         <item itemvalue="Python.main" />
         <item itemvalue="Python.labirinthe" />
         <item itemvalue="Python.test" />
+=======
+>>>>>>> parent of 3ff2f66... Dernier Pygame 23/04/20
         <item itemvalue="Python.graph" />
+        <item itemvalue="Python.main" />
       </list>
     </recent_temporary>
   </component>
@@ -195,6 +218,7 @@
       <workItem from="1590133530049" duration="402000" />
       <workItem from="1590431483417" duration="872000" />
       <workItem from="1590432387646" duration="170000" />
+<<<<<<< HEAD
       <workItem from="1590483933808" duration="6120000" />
       <workItem from="1590697416681" duration="630000" />
       <workItem from="1590745937291" duration="4659000" />
@@ -211,6 +235,9 @@
       <workItem from="1591636121947" duration="2321000" />
       <workItem from="1592403812247" duration="4622000" />
       <workItem from="1594148144033" duration="163000" />
+=======
+      <workItem from="1590483933808" duration="6081000" />
+>>>>>>> parent of 3ff2f66... Dernier Pygame 23/04/20
     </task>
     <task id="LOCAL-00001" summary="supression fichier inutile">
       <created>1586375225347</created>
@@ -240,14 +267,7 @@
       <option name="project" value="LOCAL" />
       <updated>1590133542761</updated>
     </task>
-    <task id="LOCAL-00005" summary="Dernier commit sans Pygame 23/04/20">
-      <created>1590561721738</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1590561721739</updated>
-    </task>
-    <option name="localTasksCounter" value="6" />
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -284,11 +304,20 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1675" y="506" key="#com.intellij.fileTypes.FileTypeChooser/0.0.2560.1400/-1920.0.1920.1040@0.0.2560.1400" timestamp="1590485982619" />
+<<<<<<< HEAD
     <state x="761" y="130" width="777" height="883" key="CommitChangelistDialog2" timestamp="1590561721080">
+=======
+    <state x="419" y="252" width="518" height="289" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1582701635216">
+      <screen x="0" y="27" width="1366" height="741" />
+    </state>
+    <state x="419" y="252" width="518" height="289" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.27.1366.741@0.27.1366.741" timestamp="1582701635216" />
+    <state x="761" y="130" width="777" height="883" key="CommitChangelistDialog2" timestamp="1590133542022">
+>>>>>>> parent of 3ff2f66... Dernier Pygame 23/04/20
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="761" y="130" key="CommitChangelistDialog2/0.0.2560.1400/-1920.0.1920.1040@0.0.2560.1400" timestamp="1590561721080" />
+    <state x="761" y="130" key="CommitChangelistDialog2/0.0.2560.1400/-1920.0.1920.1040@0.0.2560.1400" timestamp="1590133542022" />
     <state x="2491" y="100" width="777" height="883" key="CommitChangelistDialog2/1920.0.1920.1080/0.25.1920.1055@1920.0.1920.1080" timestamp="1586375225282" />
+<<<<<<< HEAD
     <state width="1257" height="344" key="GridCell.Tab.0.bottom" timestamp="1592491548343">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
@@ -325,10 +354,29 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="782" y="346" key="SettingsEditor/0.0.2560.1400/-1920.0.1920.1040@0.0.2560.1400" timestamp="1591637602390" />
+=======
+    <state width="2517" height="396" key="GridCell.Tab.0.bottom" timestamp="1590515643439">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="2517" height="396" key="GridCell.Tab.0.bottom/0.0.2560.1400/-1920.0.1920.1040@0.0.2560.1400" timestamp="1590515643439" />
+    <state width="2517" height="396" key="GridCell.Tab.0.center" timestamp="1590515643439">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="2517" height="396" key="GridCell.Tab.0.center/0.0.2560.1400/-1920.0.1920.1040@0.0.2560.1400" timestamp="1590515643439" />
+    <state width="2517" height="396" key="GridCell.Tab.0.left" timestamp="1590515643439">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="2517" height="396" key="GridCell.Tab.0.left/0.0.2560.1400/-1920.0.1920.1040@0.0.2560.1400" timestamp="1590515643439" />
+    <state width="2517" height="396" key="GridCell.Tab.0.right" timestamp="1590515643439">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="2517" height="396" key="GridCell.Tab.0.right/0.0.2560.1400/-1920.0.1920.1040@0.0.2560.1400" timestamp="1590515643439" />
+>>>>>>> parent of 3ff2f66... Dernier Pygame 23/04/20
     <state x="895" y="1049" key="com.intellij.ide.util.TipDialog" timestamp="1587895326677">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="895" y="1049" key="com.intellij.ide.util.TipDialog/0.0.2560.1400/-1920.0.1920.1040@0.0.2560.1400" timestamp="1587895326677" />
+<<<<<<< HEAD
     <state x="692" y="40" width="1077" height="1137" key="dock-window-1" timestamp="1591465026819">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
@@ -351,5 +399,11 @@
     <SUITE FILE_PATH="coverage/P2$graph.coverage" NAME="graph Coverage Results" MODIFIED="1590844718392" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/P2$test.coverage" NAME="test Coverage Results" MODIFIED="1591465160367" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/P2$main.coverage" NAME="main Coverage Results" MODIFIED="1592491548337" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+=======
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/P2$graph.coverage" NAME="graph Coverage Results" MODIFIED="1590515643432" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/P2$main.coverage" NAME="main Coverage Results" MODIFIED="1587627501327" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+>>>>>>> parent of 3ff2f66... Dernier Pygame 23/04/20
   </component>
 </project>
