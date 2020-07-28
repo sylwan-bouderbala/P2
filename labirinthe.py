@@ -1,4 +1,4 @@
-
+import pygame
 from perso import Perso
 from graph import dysplay
 
@@ -6,7 +6,8 @@ class Lab(object):
     def __init__(self):
         self.attributes()
         self.initialisation()
-
+        pygame.init()
+        pygame.display.set_mode((600,600))
 
     def move(self, inputage):
         Indexchange = self.indexchange(inputage)
@@ -47,14 +48,43 @@ class Lab(object):
                         pass
 
     def Display(self):
-        ListeAffichage = ""
+        # ListeAffichage = ""
+        # for i in range(self.size):
+        #     for j in range(self.size):
+        #         if j != self.size - 1:
+        #             ListeAffichage = ListeAffichage + self.format[(i, j)]
+        #         else:
+        #             ListeAffichage = ListeAffichage + self.format[(i, j)]
+        # print(len(ListeAffichage))
+
+        pygame.init()
+        ecran=pygame.display.set_mode((300,300))
+        image= dysplay()
         for i in range(self.size):
             for j in range(self.size):
-                if j != self.size - 1:
-                    ListeAffichage = ListeAffichage + self.format[(i, j)]
-                else:
-                    ListeAffichage = ListeAffichage + self.format[(i, j)]
-        print(len(ListeAffichage))
+                if self.format[(j,i)]=='.':
+                    ecran.blit(image.floor,(i*20,j*20))
+                if self.format[(j,i)]=='x':
+                    ecran.blit(image.Wall,(i*20,j*20))
+                if self.format[(j,i)]=='1':
+                    ecran.blit(image.McGiver,(i*20,j*20))
+                if self.format[(j,i)]=='2':
+                    ecran.blit(image.Mechant,(i*20,j*20))
+                if self.format[(j,i)]=='3':
+                    ecran.blit(image.ether,(i*20,j*20))
+                if self.format[(j,i)]=='4':
+                    ecran.blit(image.seringue,(i*20,j*20))
+                if self.format[(j,i)]=='5':
+                    ecran.blit(image.tube,(i*20,j*20))
+
+        pygame.display.flip()
+        Continuer = True
+        while Continuer:
+             for events in pygame.event.get():
+                 if events.type == pygame.QUIT:
+                     Continuer = False
+                     print(events)
+        pygame.display.flip()
 
     def sub_init(self, i, j, x):
         if j == '.':
@@ -77,29 +107,30 @@ class Lab(object):
         self.size = 0
         self.format = {}
 
-    def Movements(self,inputage ):
-        if inputage==1:
+    def Movements(self, ):
+        pygame.init()
+        if pygame.event.get() == pygame.K_LEFT:
             if (self.mcgiver.position[1] - 1) <= self.size - 1:
                 self.format[tuple(self.mcgiver.position)] = '.'
                 self.mcgiver.position[1] =self.mcgiver.position[1]-1
                 self.format[tuple(self.mcgiver.position)] = '1'
             else:
                 print('erreur hors du tableau')
-        if inputage==2:
+        if  pygame.K_DOWN:
             if (self.mcgiver.position[0] + 1) <= self.size - 1:
                 self.format[tuple(self.mcgiver.position)] = '.'
                 self.mcgiver.position[0] =self.mcgiver.position[0] + 1
                 self.format[tuple(self.mcgiver.position)] = '1'
             else:
                 print('erreur hors du tableau')
-        if inputage==3:
+        if  pygame.K_UP:
             if (self.mcgiver.position[1] + 1) <= self.size - 1:
                 self.format[tuple(self.mcgiver.position)] = '.'
                 self.mcgiver.position[1] = self.mcgiver.position[1] + 1
                 self.format[tuple(self.mcgiver.position)] = '1'
             else:
                 print('erreur hors du tableau')
-        if inputage==4:
+        if pygame.K_RIGHT:
             if (self.mcgiver.position[0] - 1) <= self.size - 1:
                 self.format[tuple(self.mcgiver.position)] = '.'
                 self.mcgiver.position[0] =self.mcgiver.position[0]-1
