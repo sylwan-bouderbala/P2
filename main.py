@@ -1,12 +1,6 @@
-from labirinthe import Lab
-<<<<<<< HEAD
-
-<<<<<<< HEAD
-=======
 import pygame
 from graph import dysplay
-
->>>>>>> parent of 946fa2a... commit to new branche
+from labirinthe import Lab
 
 
 
@@ -43,8 +37,7 @@ from graph import dysplay
 #             continuer=False
 #         if labyrinthe.win()==True:
 #             continuer==False
-<<<<<<< HEAD
-=======
+
 class game(object):
     def __init__(self):
         self.inputpossible = ['1', '2', '3', '5']
@@ -65,6 +58,3 @@ class game(object):
 
 
 Game = game()
->>>>>>> parent of 3ff2f66... Dernier Pygame 23/04/20
-=======
->>>>>>> parent of 946fa2a... commit to new branche
