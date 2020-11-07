@@ -23,8 +23,8 @@
       <change beforePath="$PROJECT_DIR$/.idea/P2.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/P2.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/labirinthe.py" beforeDir="false" afterPath="$PROJECT_DIR$/labirinthe.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/perso.py" beforeDir="false" afterPath="$PROJECT_DIR$/perso.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,7 +49,7 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/main.py" root0="SKIP_INSPECTION" />
   </component>
-  <component name="JupyterTrust" id="cf9d975a-19ee-4bb4-9fc4-034dc51da0a8" />
+  <component name="JupyterTrust" id="9ac02330-1a9f-45e5-9a4c-b143b7489ed4" />
   <component name="ProjectId" id="1YKqDCZcpPzagLVZdJ6xEdmJZaF" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -66,7 +66,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="run.code.analysis.last.selected.profile" value="aDefault" />
-    <property name="settings.editor.selected.configurable" value="configurable.group.editor" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -171,6 +171,7 @@
       </list>
     </recent_temporary>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -210,6 +211,7 @@
       <workItem from="1592403812247" duration="4622000" />
       <workItem from="1594148144033" duration="163000" />
       <workItem from="1595748328574" duration="794000" />
+      <workItem from="1604761008255" duration="1202000" />
     </task>
     <task id="LOCAL-00001" summary="supression fichier inutile">
       <created>1586375225347</created>
@@ -250,7 +252,7 @@
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="2" />
+    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -271,87 +273,47 @@
     <option name="LAST_COMMIT_MESSAGE" value="Dernier commit sans Pygame 23/04/20" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="1143" y="395" key="#Images" timestamp="1590768018829">
-      <screen x="0" y="0" width="2560" height="1400" />
+    <state x="991" y="499" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1604761158107">
+      <screen x="0" y="0" width="3072" height="1688" />
     </state>
-    <state x="1143" y="395" key="#Images/0.0.2560.1400/-1920.0.1920.1040@0.0.2560.1400" timestamp="1590768018829" />
-    <state x="736" y="356" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1587575411443">
-      <screen x="0" y="0" width="2560" height="1400" />
+    <state x="991" y="499" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.3072.1688/-1920.0.1920.1040@0.0.3072.1688" timestamp="1604761158107" />
+    <state width="1491" height="493" key="GridCell.Tab.0.bottom" timestamp="1604762201387">
+      <screen x="0" y="0" width="3072" height="1688" />
     </state>
-    <state x="736" y="356" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.2560.1400/-1920.0.1920.1040@0.0.2560.1400" timestamp="1587575411443" />
-    <state x="1675" y="506" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1590485982619">
-      <screen x="0" y="0" width="2560" height="1400" />
+    <state width="1491" height="493" key="GridCell.Tab.0.bottom/0.0.3072.1688/-1920.0.1920.1040@0.0.3072.1688" timestamp="1604762201387" />
+    <state width="1491" height="493" key="GridCell.Tab.0.center" timestamp="1604762201387">
+      <screen x="0" y="0" width="3072" height="1688" />
     </state>
-    <state x="1675" y="506" key="#com.intellij.fileTypes.FileTypeChooser/0.0.2560.1400/-1920.0.1920.1040@0.0.2560.1400" timestamp="1590485982619" />
-    <state x="761" y="130" width="777" height="883" key="CommitChangelistDialog2" timestamp="1590561721080">
-      <screen x="0" y="0" width="2560" height="1400" />
+    <state width="1491" height="493" key="GridCell.Tab.0.center/0.0.3072.1688/-1920.0.1920.1040@0.0.3072.1688" timestamp="1604762201387" />
+    <state width="1491" height="493" key="GridCell.Tab.0.left" timestamp="1604762201387">
+      <screen x="0" y="0" width="3072" height="1688" />
     </state>
-    <state x="761" y="130" key="CommitChangelistDialog2/0.0.2560.1400/-1920.0.1920.1040@0.0.2560.1400" timestamp="1590561721080" />
-    <state width="1320" height="175" key="GridCell.Tab.0.bottom" timestamp="1595748369790">
-      <screen x="0" y="27" width="1366" height="741" />
+    <state width="1491" height="493" key="GridCell.Tab.0.left/0.0.3072.1688/-1920.0.1920.1040@0.0.3072.1688" timestamp="1604762201387" />
+    <state width="1491" height="493" key="GridCell.Tab.0.right" timestamp="1604762201387">
+      <screen x="0" y="0" width="3072" height="1688" />
     </state>
-    <state width="1257" height="344" key="GridCell.Tab.0.bottom/0.0.2560.1400/-1920.0.1920.1040@0.0.2560.1400" timestamp="1592491548343" />
-    <state width="1320" height="175" key="GridCell.Tab.0.bottom/0.27.1366.741@0.27.1366.741" timestamp="1595748369790" />
-    <state width="1320" height="175" key="GridCell.Tab.0.center" timestamp="1595748369789">
-      <screen x="0" y="27" width="1366" height="741" />
+    <state width="1491" height="493" key="GridCell.Tab.0.right/0.0.3072.1688/-1920.0.1920.1040@0.0.3072.1688" timestamp="1604762201387" />
+    <state x="1001" y="528" key="SettingsEditor" timestamp="1604761195222">
+      <screen x="0" y="0" width="3072" height="1688" />
     </state>
-    <state width="1257" height="344" key="GridCell.Tab.0.center/0.0.2560.1400/-1920.0.1920.1040@0.0.2560.1400" timestamp="1592491548343" />
-    <state width="1320" height="175" key="GridCell.Tab.0.center/0.27.1366.741@0.27.1366.741" timestamp="1595748369789" />
-    <state width="1320" height="175" key="GridCell.Tab.0.left" timestamp="1595748369789">
-      <screen x="0" y="27" width="1366" height="741" />
-    </state>
-    <state width="1257" height="344" key="GridCell.Tab.0.left/0.0.2560.1400/-1920.0.1920.1040@0.0.2560.1400" timestamp="1592491548343" />
-    <state width="1320" height="175" key="GridCell.Tab.0.left/0.27.1366.741@0.27.1366.741" timestamp="1595748369789" />
-    <state width="1320" height="175" key="GridCell.Tab.0.right" timestamp="1595748369790">
-      <screen x="0" y="27" width="1366" height="741" />
-    </state>
-    <state width="1257" height="344" key="GridCell.Tab.0.right/0.0.2560.1400/-1920.0.1920.1040@0.0.2560.1400" timestamp="1592491548343" />
-    <state width="1320" height="175" key="GridCell.Tab.0.right/0.27.1366.741@0.27.1366.741" timestamp="1595748369790" />
-    <state width="1258" height="492" key="GridCell.Tab.1.bottom" timestamp="1592477990314">
-      <screen x="0" y="0" width="2560" height="1400" />
-    </state>
-    <state width="1258" height="492" key="GridCell.Tab.1.bottom/0.0.2560.1400/-1920.0.1920.1040@0.0.2560.1400" timestamp="1592477990314" />
-    <state width="1258" height="492" key="GridCell.Tab.1.center" timestamp="1592477990314">
-      <screen x="0" y="0" width="2560" height="1400" />
-    </state>
-    <state width="1258" height="492" key="GridCell.Tab.1.center/0.0.2560.1400/-1920.0.1920.1040@0.0.2560.1400" timestamp="1592477990314" />
-    <state width="1258" height="492" key="GridCell.Tab.1.left" timestamp="1592477990314">
-      <screen x="0" y="0" width="2560" height="1400" />
-    </state>
-    <state width="1258" height="492" key="GridCell.Tab.1.left/0.0.2560.1400/-1920.0.1920.1040@0.0.2560.1400" timestamp="1592477990314" />
-    <state width="1258" height="492" key="GridCell.Tab.1.right" timestamp="1592477990314">
-      <screen x="0" y="0" width="2560" height="1400" />
-    </state>
-    <state width="1258" height="492" key="GridCell.Tab.1.right/0.0.2560.1400/-1920.0.1920.1040@0.0.2560.1400" timestamp="1592477990314" />
-    <state x="782" y="346" key="SettingsEditor" timestamp="1591637602390">
-      <screen x="0" y="0" width="2560" height="1400" />
-    </state>
-    <state x="782" y="346" key="SettingsEditor/0.0.2560.1400/-1920.0.1920.1040@0.0.2560.1400" timestamp="1591637602390" />
-    <state x="895" y="1049" key="com.intellij.ide.util.TipDialog" timestamp="1587895326677">
-      <screen x="0" y="0" width="2560" height="1400" />
-    </state>
-    <state x="895" y="1049" key="com.intellij.ide.util.TipDialog/0.0.2560.1400/-1920.0.1920.1040@0.0.2560.1400" timestamp="1587895326677" />
-    <state x="692" y="40" width="1077" height="1137" key="dock-window-1" timestamp="1591465026819">
-      <screen x="0" y="0" width="2560" height="1400" />
-    </state>
-    <state x="692" y="40" width="1077" height="1137" key="dock-window-1/0.0.2560.1400/-1920.0.1920.1040@0.0.2560.1400" timestamp="1591465026819" />
-    <state x="987" y="300" width="587" height="801" key="find.popup" timestamp="1590842392390">
-      <screen x="0" y="0" width="2560" height="1400" />
-    </state>
-    <state x="987" y="300" width="587" height="801" key="find.popup/0.0.2560.1400/-1920.0.1920.1040@0.0.2560.1400" timestamp="1590842392390" />
-    <state x="1054" y="575" width="609" height="280" key="org.intellij.images.editor.actions.BackgroundImageDialog" timestamp="1591371565964">
-      <screen x="0" y="0" width="2560" height="1400" />
-    </state>
-    <state x="1054" y="575" width="609" height="280" key="org.intellij.images.editor.actions.BackgroundImageDialog/0.0.2560.1400/-1920.0.1920.1040@0.0.2560.1400" timestamp="1591371565964" />
-    <state x="1583" y="320" width="672" height="678" key="search.everywhere.popup" timestamp="1592491579453">
-      <screen x="0" y="0" width="2560" height="1400" />
-    </state>
-    <state x="1583" y="320" width="672" height="678" key="search.everywhere.popup/0.0.2560.1400/-1920.0.1920.1040@0.0.2560.1400" timestamp="1592491579453" />
+    <state x="1001" y="528" key="SettingsEditor/0.0.3072.1688/-1920.0.1920.1040@0.0.3072.1688" timestamp="1604761195222" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/labirinthe.py</url>
+          <line>1</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/lab$main.coverage" NAME="main Coverage Results" MODIFIED="1604762201382" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/P2$labirinthe.coverage" NAME="labirinthe Coverage Results" MODIFIED="1592405542998" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/P2$test.coverage" NAME="test Coverage Results" MODIFIED="1591465160367" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/P2$main.coverage" NAME="main Coverage Results" MODIFIED="1595748366018" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/P2$graph.coverage" NAME="graph Coverage Results" MODIFIED="1590844718392" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/P2$labirinthe.coverage" NAME="labirinthe Coverage Results" MODIFIED="1592405542998" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
