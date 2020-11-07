@@ -1,4 +1,3 @@
-
 from perso import Perso
 from graph import dysplay
 
@@ -47,14 +46,14 @@ class Lab(object):
                         pass
 
     def Display(self):
-        ListeAffichage = ""
+        self.ListeAffichage = ""
         for i in range(self.size):
             for j in range(self.size):
                 if j != self.size - 1:
-                    ListeAffichage = ListeAffichage + self.format[(i, j)]
+                    self.ListeAffichage = self.ListeAffichage + self.format[(i, j)]
                 else:
-                    ListeAffichage = ListeAffichage + self.format[(i, j)]
-        print(len(ListeAffichage))
+                    self.ListeAffichage = self.ListeAffichage + self.format[(i, j)] + '\n'
+        print(self.ListeAffichage)
 
     def sub_init(self, i, j, x):
         if j == '.':
@@ -125,3 +124,6 @@ class Lab(object):
         else:
             return True
 
+jeu = Lab()
+
+jeu.Display()
