@@ -52,8 +52,19 @@ class Lab(object):
                 if j != self.size - 1:
                     self.ListeAffichage = self.ListeAffichage + self.format[(i, j)]
                 else:
-                    self.ListeAffichage = self.ListeAffichage + self.format[(i, j)] + '\n'
-        print(self.ListeAffichage)
+                    self.ListeAffichage = self.ListeAffichage + self.format[(i, j)]
+        self.listeposition=[]
+        for i in range(self.size):
+            for j in range (self.size):
+                self.listeposition.append((i,j))
+        self.Map={}
+        for i in range(self.size**2):
+            self.Map[self.listeposition[i]]=self.ListeAffichage[i]
+        for i in self.Map.keys():
+            print(self.Map[i])
+
+
+
 
     def sub_init(self, i, j, x):
         if j == '.':

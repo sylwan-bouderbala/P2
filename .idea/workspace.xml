@@ -77,7 +77,7 @@
       <recent name="C:\Users\sylwa\PycharmProjects\P2\images" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.labirinthe">
+  <component name="RunManager" selected="Python.main">
     <configuration name="graph" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="P2" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -168,8 +168,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.labirinthe" />
         <item itemvalue="Python.main" />
+        <item itemvalue="Python.labirinthe" />
         <item itemvalue="Python.test" />
         <item itemvalue="Python.graph" />
       </list>
@@ -215,7 +215,9 @@
       <workItem from="1592403812247" duration="4622000" />
       <workItem from="1594148144033" duration="163000" />
       <workItem from="1595748328574" duration="794000" />
-      <workItem from="1604761008255" duration="2365000" />
+      <workItem from="1604761008255" duration="4562000" />
+      <workItem from="1605195607915" duration="711000" />
+      <workItem from="1605196331752" duration="4295000" />
     </task>
     <task id="LOCAL-00001" summary="supression fichier inutile">
       <created>1586375225347</created>
@@ -259,7 +261,14 @@
       <option name="project" value="LOCAL" />
       <updated>1604762255719</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Dernier commit sans Pygame 23/04/20">
+      <created>1604763475030</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1604763475030</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -288,39 +297,40 @@
       <screen x="0" y="0" width="3072" height="1688" />
     </state>
     <state x="991" y="499" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.3072.1688/-1920.0.1920.1040@0.0.3072.1688" timestamp="1604761158107" />
-    <state x="1929" y="416" key="CommitChangelistDialog2" timestamp="1604762255309">
+    <state x="1929" y="416" key="CommitChangelistDialog2" timestamp="1604763474665">
       <screen x="0" y="0" width="3072" height="1688" />
     </state>
-    <state x="1929" y="416" key="CommitChangelistDialog2/0.0.3072.1688/-1920.0.1920.1040@0.0.3072.1688" timestamp="1604762255309" />
-    <state width="1491" height="493" key="GridCell.Tab.0.bottom" timestamp="1604763409516">
+    <state x="1929" y="416" key="CommitChangelistDialog2/0.0.3072.1688/-1920.0.1920.1040@0.0.3072.1688" timestamp="1604763474665" />
+    <state width="3029" height="493" key="GridCell.Tab.0.bottom" timestamp="1605199490504">
       <screen x="0" y="0" width="3072" height="1688" />
     </state>
-    <state width="1491" height="493" key="GridCell.Tab.0.bottom/0.0.3072.1688/-1920.0.1920.1040@0.0.3072.1688" timestamp="1604763409516" />
-    <state width="1491" height="493" key="GridCell.Tab.0.center" timestamp="1604763409515">
+    <state width="3029" height="493" key="GridCell.Tab.0.bottom/0.0.3072.1688/-1920.0.1920.1040@0.0.3072.1688" timestamp="1605199490504" />
+    <state width="3029" height="493" key="GridCell.Tab.0.center" timestamp="1605199490504">
       <screen x="0" y="0" width="3072" height="1688" />
     </state>
-    <state width="1491" height="493" key="GridCell.Tab.0.center/0.0.3072.1688/-1920.0.1920.1040@0.0.3072.1688" timestamp="1604763409515" />
-    <state width="1491" height="493" key="GridCell.Tab.0.left" timestamp="1604763409515">
+    <state width="3029" height="493" key="GridCell.Tab.0.center/0.0.3072.1688/-1920.0.1920.1040@0.0.3072.1688" timestamp="1605199490504" />
+    <state width="3029" height="493" key="GridCell.Tab.0.left" timestamp="1605199490504">
       <screen x="0" y="0" width="3072" height="1688" />
     </state>
-    <state width="1491" height="493" key="GridCell.Tab.0.left/0.0.3072.1688/-1920.0.1920.1040@0.0.3072.1688" timestamp="1604763409515" />
-    <state width="1491" height="493" key="GridCell.Tab.0.right" timestamp="1604763409516">
+    <state width="3029" height="493" key="GridCell.Tab.0.left/0.0.3072.1688/-1920.0.1920.1040@0.0.3072.1688" timestamp="1605199490504" />
+    <state width="3029" height="493" key="GridCell.Tab.0.right" timestamp="1605199490504">
       <screen x="0" y="0" width="3072" height="1688" />
     </state>
-    <state width="1491" height="493" key="GridCell.Tab.0.right/0.0.3072.1688/-1920.0.1920.1040@0.0.3072.1688" timestamp="1604763409516" />
+    <state width="3029" height="493" key="GridCell.Tab.0.right/0.0.3072.1688/-1920.0.1920.1040@0.0.3072.1688" timestamp="1605199490504" />
     <state x="1001" y="528" key="SettingsEditor" timestamp="1604761195222">
       <screen x="0" y="0" width="3072" height="1688" />
     </state>
     <state x="1001" y="528" key="SettingsEditor/0.0.3072.1688/-1920.0.1920.1040@0.0.3072.1688" timestamp="1604761195222" />
-    <state x="1897" y="580" key="Vcs.Push.Dialog.v2" timestamp="1604762259202">
+    <state x="1897" y="580" key="Vcs.Push.Dialog.v2" timestamp="1604763478214">
       <screen x="0" y="0" width="3072" height="1688" />
     </state>
-    <state x="1897" y="580" key="Vcs.Push.Dialog.v2/0.0.3072.1688/-1920.0.1920.1040@0.0.3072.1688" timestamp="1604762259202" />
+    <state x="1897" y="580" key="Vcs.Push.Dialog.v2/0.0.3072.1688/-1920.0.1920.1040@0.0.3072.1688" timestamp="1604763478214" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/lab$labirinthe.coverage" NAME="labirinthe Coverage Results" MODIFIED="1604763409510" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/lab$main.coverage" NAME="main Coverage Results" MODIFIED="1604763324765" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/lab$labirinthe.coverage" NAME="labirinthe Coverage Results" MODIFIED="1605197591881" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/lab$main.coverage" NAME="main Coverage Results" MODIFIED="1605199490498" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/P2$labirinthe.coverage" NAME="labirinthe Coverage Results" MODIFIED="1592405542998" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/lab$test.coverage" NAME="test Coverage Results" MODIFIED="1605195852725" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/P2$test.coverage" NAME="test Coverage Results" MODIFIED="1591465160367" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/P2$main.coverage" NAME="main Coverage Results" MODIFIED="1595748366018" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/P2$graph.coverage" NAME="graph Coverage Results" MODIFIED="1590844718392" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
