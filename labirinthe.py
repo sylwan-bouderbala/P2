@@ -1,25 +1,26 @@
 from perso import Perso
 from graph import dysplay
 
+
 class Lab(object):
+
     def __init__(self):
         self.attributes()
         self.initialisation()
 
-
     def move(self, inputage):
-        Indexchange = self.indexchange(inputage)
+        indexchange = self.indexchange(inputage)
         try:
-            if self.format[tuple(Indexchange)]=='.':
+            if self.format[tuple(indexchange)] == '.':
                 self.Movements(inputage)
-            if self.format[tuple(Indexchange)]=='x':
+            if self.format[tuple(indexchange)] == 'x':
                 print('c"est un mur')
-            if self.format[tuple(Indexchange)]=='2':
-                if self.mcgiver.objectnumber==4:
+            if self.format[tuple(indexchange)] == '2':
+                if self.mcgiver.objectnumber == 4:
                     self.Movements(inputage)
-                else :
+                else:
                     print('il te faut 4 objet')
-            if tuple(Indexchange) in self.objet:
+            if tuple(indexchange) in self.objet:
                 self.Movements(inputage)
                 self.mcgiver.addobject()
 
@@ -53,18 +54,15 @@ class Lab(object):
                     self.ListeAffichage = self.ListeAffichage + self.format[(i, j)]
                 else:
                     self.ListeAffichage = self.ListeAffichage + self.format[(i, j)]
-        self.listeposition=[]
+        self.listeposition = []
         for i in range(self.size):
-            for j in range (self.size):
-                self.listeposition.append((i,j))
-        self.Map={}
-        for i in range(self.size**2):
-            self.Map[self.listeposition[i]]=self.ListeAffichage[i]
+            for j in range(self.size):
+                self.listeposition.append((i, j))
+        self.Map = {}
+        for i in range(self.size ** 2):
+            self.Map[self.listeposition[i]] = self.ListeAffichage[i]
         for i in self.Map.keys():
             print(self.Map[i])
-
-
-
 
     def sub_init(self, i, j, x):
         if j == '.':
@@ -75,66 +73,66 @@ class Lab(object):
             self.mcgiver = Perso([i, x])
         elif j == '2':
             self.mechant = (i, x)
-        else :
-            self.objet.append((i,x))
+        else:
+            self.objet.append((i, x))
 
     def attributes(self):
         self.mur = []
-        self.objet=[]
+        self.objet = []
         self.listevide = []
         self.mcgiver = []
         self.mechant = ()
         self.size = 0
         self.format = {}
 
-    def Movements(self,inputage ):
-        if inputage==1:
+    def Movements(self, inputage):
+        if inputage == 1:
             if (self.mcgiver.position[1] - 1) <= self.size - 1:
                 self.format[tuple(self.mcgiver.position)] = '.'
-                self.mcgiver.position[1] =self.mcgiver.position[1]-1
+                self.mcgiver.position[1] = self.mcgiver.position[1] - 1
                 self.format[tuple(self.mcgiver.position)] = '1'
             else:
                 print('erreur hors du tableau')
-        if inputage==2:
+        if inputage == 2:
             if (self.mcgiver.position[0] + 1) <= self.size - 1:
                 self.format[tuple(self.mcgiver.position)] = '.'
-                self.mcgiver.position[0] =self.mcgiver.position[0] + 1
+                self.mcgiver.position[0] = self.mcgiver.position[0] + 1
                 self.format[tuple(self.mcgiver.position)] = '1'
             else:
                 print('erreur hors du tableau')
-        if inputage==3:
+        if inputage == 3:
             if (self.mcgiver.position[1] + 1) <= self.size - 1:
                 self.format[tuple(self.mcgiver.position)] = '.'
                 self.mcgiver.position[1] = self.mcgiver.position[1] + 1
                 self.format[tuple(self.mcgiver.position)] = '1'
             else:
                 print('erreur hors du tableau')
-        if inputage==4:
+        if inputage == 4:
             if (self.mcgiver.position[0] - 1) <= self.size - 1:
                 self.format[tuple(self.mcgiver.position)] = '.'
-                self.mcgiver.position[0] =self.mcgiver.position[0]-1
+                self.mcgiver.position[0] = self.mcgiver.position[0] - 1
                 self.format[tuple(self.mcgiver.position)] = '1'
             else:
                 print('erreur hors du tableau')
         else:
             print("selectionner un mouvement")
 
-    def indexchange(self,inputage):
+    def indexchange(self, inputage):
         if inputage == 1:
-            return [self.mcgiver.position[0],self.mcgiver.position[1]-1]
-        if inputage ==2 :
-            return [self.mcgiver.position[0]+1,self.mcgiver.position[1]]
+            return [self.mcgiver.position[0], self.mcgiver.position[1] - 1]
+        if inputage == 2:
+            return [self.mcgiver.position[0] + 1, self.mcgiver.position[1]]
         if inputage == 3:
-            return [self.mcgiver.position[0],self.mcgiver.position[1]+1]
-        if inputage== 5:
-            return [self.mcgiver.position[0]-1,self.mcgiver.position[1]]
+            return [self.mcgiver.position[0], self.mcgiver.position[1] + 1]
+        if inputage == 5:
+            return [self.mcgiver.position[0] - 1, self.mcgiver.position[1]]
 
     def win(self):
-        if tuple(self.mcgiver.position)==self.mechant:
+        if tuple(self.mcgiver.position) == self.mechant:
             return False
         else:
             return True
 
-jeu = Lab()
 
-jeu.Display()
+labir = Lab()
+print(labir.mcgiver)

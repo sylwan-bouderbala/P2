@@ -5,10 +5,10 @@ from graph import dysplay
 
 class game(object):
     def __init__ (self):
-        display_width = 800
-        display_height = 600
+        display_width = 15*20
+        display_height = 15*20
 
-        gameDisplay = pygame.display.set_mode((display_width, display_height))
+        self.gameDisplay = pygame.display.set_mode((display_width, display_height))
         pygame.display.set_caption('A bit Racey')
         pygame.init()
         self.Map = Lab()
@@ -16,10 +16,28 @@ class game(object):
         self.graphisme= dysplay()
 
 
-
-
         clock = pygame.time.Clock()
         crashed = False
+
+    def print(self):
+        for i in range(self.Map.size):
+            for j in range(self.Map.size):
+                if self.Map.format[(i, j)] == "1":
+                    self.gameDisplay.blit(self.graphisme.McGiver, (i * 20, j * 20))
+                elif self.Map.format[(i, j)] == ".":
+                    self.gameDisplay.blit(self.graphisme.floor, (i * 20, j * 20))
+                elif self.Map.format[(i, j)] == "2":
+                    self.gameDisplay.blit(self.graphisme.Mechant, (i * 20, j * 20))
+                elif self.Map.format[(i, j)] == "x":
+                    self.gameDisplay.blit(self.graphisme.Wall, (i * 20, j * 20))
+                elif self.Map.format[(i, j)] == "3":
+                    self.gameDisplay.blit(self.graphisme.tube, (i * 20, j * 20))
+                elif self.Map.format[(i, j)] == "4":
+                    self.gameDisplay.blit(self.graphisme.ether, (i * 20, j * 20))
+                elif self.Map.format[(i, j)] == "5":
+                    self.gameDisplay.blit(self.graphisme.seringue, (i * 20, j * 20))
+                else:
+                    self.gameDisplay.blit(self.graphisme.floor, (i * 20, j * 20))
 
     def wininggame (self):
         return false
@@ -29,36 +47,39 @@ class game(object):
     def instance (self):
         pygame.init()
 
-        display_width = 800
-        display_height = 600
+        display_width = self.Map.size*20
+        display_height = self.Map.size*20
 
         gameDisplay = pygame.display.set_mode((display_width, display_height))
         pygame.display.set_caption('A bit Racey')
 
         clock = pygame.time.Clock()
         crashed = False
-        x = (display_width * 0.45)
-        y = (display_height * 0.8)
-
-        for i in range(self.Map.size):
-            for j in range(self.Map.size):
-                gameDisplay.blit(self.graphisme.floor, (x,y))
 
 
 
+
+
+        crashed=False
 
         while not crashed:
+            self.print()
             for event in pygame.event.get():
                 if event.type == pygame.QUIT:
-                    crashed = True
+                    crashed =True
+                    print(crashed)
                 elif event.type == pygame.KEYDOWN:
-                        if event.key == pygame.K_LEFT:
-                            print('bonjour')
-                        if event.key == pygame.K_RIGHT:
-                            location += 1
-
-
-            gameDisplay.fill((155,155,155))
+                    if event.key == pygame.K_LEFT:
+                        self.Map.move(3)
+                    elif event.key == pygame.K_RIGHT:
+                        self.Map.move(2)
+                    if pygame.key == pygame.K_DOWN:
+                        self.Map.move(3)
+                    elif event.key == pygame.K_UP:
+                        self.Map.move(5)
+                    print(pygame.K_DOWN)
+                    print(event.key)
+            pygame.display.flip()
 
             pygame.display.update()
             clock.tick(60)
@@ -69,6 +90,7 @@ class game(object):
 
 game = game()
 game.instance()
+
 
 
 
