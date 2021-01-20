@@ -62,27 +62,30 @@ class game(object):
 
         crashed=False
 
-        while not crashed:
+        while not crashed and self.Map.win():
             self.print()
             for event in pygame.event.get():
                 if event.type == pygame.QUIT:
                     crashed =True
                     print(crashed)
                 elif event.type == pygame.KEYDOWN:
+                    print(pygame.KEYDOWN)
+
+                    if event.key == pygame.K_DOWN:
+                        self.Map.move(3)
                     if event.key == pygame.K_LEFT:
-                        self.Map.move(3)
-                    elif event.key == pygame.K_RIGHT:
-                        self.Map.move(2)
-                    if pygame.key == pygame.K_DOWN:
-                        self.Map.move(3)
-                    elif event.key == pygame.K_UP:
                         self.Map.move(5)
-                    print(pygame.K_DOWN)
+                    if event.key == pygame.K_RIGHT:
+                        self.Map.move(2)
+                    if event.key == pygame.K_UP:
+                        self.Map.move(1)
+                    print(pygame.K_LEFT)
                     print(event.key)
             pygame.display.flip()
-
             pygame.display.update()
             clock.tick(60)
+            if self.Map.win()==True:
+                    print('Vous Avez Gagner !!!!')
 
         pygame.quit()
         quit()
