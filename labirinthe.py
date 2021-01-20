@@ -18,7 +18,7 @@ class Lab(object):
             if self.format[tuple(indexchange)] == 'x':
                 print('c"est un mur')
             if self.format[tuple(indexchange)] == '2':
-                if self.mcgiver.objectnumber == 4:
+                if self.mcgiver.objectnumber >= 3:
                     self.Movements(inputage)
                 else:
                     print('il te faut 4 objet')
@@ -111,6 +111,7 @@ class Lab(object):
 
 
     def indexchange(self, inputage):
+        print(self.mcgiver.position)
         if inputage == 1:
             return [self.mcgiver.position[0], self.mcgiver.position[1] - 1]
         if inputage == 2:

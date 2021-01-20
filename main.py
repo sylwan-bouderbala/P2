@@ -84,8 +84,6 @@ class game(object):
             pygame.display.flip()
             pygame.display.update()
             clock.tick(60)
-            if self.Map.win()==True:
-                    print('Vous Avez Gagner !!!!')
 
         pygame.quit()
         quit()
