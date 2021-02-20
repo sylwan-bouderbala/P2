@@ -1,3 +1,5 @@
+import random
+
 from perso import Perso
 from graph import dysplay
 
@@ -7,6 +9,8 @@ class Lab(object):
     def __init__(self):
         self.attributes()
         self.initialisation()
+        self.addobject()
+        print(self.format)
 
 
     def move(self, inputage):
@@ -47,6 +51,23 @@ class Lab(object):
                         x = x + 1
                     else:
                         pass
+
+    def addobject(self):
+        i,j,k,l = False,False,False,False
+        for key in self.format:
+                if self.format[key] == '.' and i==False:
+                    self.format[key]='6'
+                    i=True
+                if self.format[key] == '.' and j ==False :
+                    self.format[key] = '5'
+                    j=True
+                if self.format[key] == '.' and k== False:
+                    self.format[key]='4'
+                    k=True
+                if self.format[key] == '.' and l== False:
+                    self.format[key]='3'
+                    l=True
+
 
 
 

@@ -42,7 +42,6 @@ class game(object):
     def wininggame (self):
         return false
 
-    # def dysplay(self):
 
     def instance (self):
         pygame.init()
@@ -55,12 +54,6 @@ class game(object):
 
         clock = pygame.time.Clock()
         crashed = False
-
-
-
-
-
-        crashed=False
 
         while not crashed and self.Map.win():
             self.print()
