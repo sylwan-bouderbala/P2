@@ -1,24 +1,15 @@
 import pygame
-# par la même occasion cela importe pygame.locals dans l'espace de nom de Pygame
+import PATH
 
 
 class dysplay():
     def __init__(self):
-        McGiversrc = 'images/MacGyver.png'
-        Mechantsrc='images/Gardien.png'
-        floor='images/floor-tiles-20x20.png'
-        Wallsrc='images/structures.png'
-        seringuesrc='images/seringue.png'
-        tubesrc="images/tube_plastique.png"
-        ethersrc="images/ether.png"
-
-
-        self.floor=pygame.image.load(floor).convert()
-        self.McGiver=pygame.image.load(McGiversrc).convert()
-        self.Mechant=pygame.image.load(Mechantsrc).convert()
-        self.Wall=pygame.image.load(Wallsrc).convert()
-        self.seringue=pygame.image.load(seringuesrc).convert()
-        self.tube=pygame.image.load(tubesrc).convert()
-        self.ether=pygame.image.load(ethersrc).convert()
-
-
+        self.floor = pygame.image.load(PATH.
+                                       floor
+                                       ).convert()
+        self.McGiver = pygame.image.load(PATH.McGiversrc).convert()
+        self.Mechant = pygame.image.load(PATH.Mechantsrc).convert()
+        self.Wall = pygame.image.load(PATH.Wallsrc).convert()
+        self.seringue = pygame.image.load(PATH.seringuesrc).convert()
+        self.tube = pygame.image.load(PATH.tubesrc).convert()
+        self.ether = pygame.image.load(PATH.ethersrc).convert()

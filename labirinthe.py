@@ -1,7 +1,4 @@
-import random
-
 from perso import Perso
-from graph import dysplay
 
 
 class Lab(object):
@@ -11,7 +8,6 @@ class Lab(object):
         self.initialisation()
         self.addobject()
         print(self.format)
-
 
     def move(self, inputage):
         print(self.mcgiver.objectnumber)
@@ -27,10 +23,10 @@ class Lab(object):
                 else:
                     print('il te faut 4 objet')
             if tuple(indexchange) in self.objet:
-                 self.Movements(inputage)
-                 self.mcgiver.Addobject()
+                self.Movements(inputage)
+                self.mcgiver.Addobject()
 
-        except:
+        except IndexError:
             print("c'est hors du tableau ")
 
     def initsize(self):
@@ -53,23 +49,20 @@ class Lab(object):
                         pass
 
     def addobject(self):
-        i,j,k,l = False,False,False,False
+        i, j, k, z = False, False, False, False
         for key in self.format:
-                if self.format[key] == '.' and i==False:
-                    self.format[key]='6'
-                    i=True
-                if self.format[key] == '.' and j ==False :
-                    self.format[key] = '5'
-                    j=True
-                if self.format[key] == '.' and k== False:
-                    self.format[key]='4'
-                    k=True
-                if self.format[key] == '.' and l== False:
-                    self.format[key]='3'
-                    l=True
-
-
-
+            if self.format[key] == '.' and i == (not False):
+                self.format[key] = '6'
+                i = True
+            if self.format[key] == '.' and j == (not False):
+                self.format[key] = '5'
+                j = True
+            if self.format[key] == '.' and k == (not False):
+                self.format[key] = '4'
+                k = True
+            if self.format[key] == '.' and z == (not False):
+                self.format[key] = '3'
+                z = True
 
     def sub_init(self, i, j, x):
         if j == '.':
@@ -127,9 +120,6 @@ class Lab(object):
     #
     # def object(self,inputage):
     #     if self.format[(self.indexchange(inputage))] in [3,4,5]:
-
-
-
 
     def indexchange(self, inputage):
         print(self.mcgiver.position)

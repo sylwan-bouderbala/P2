@@ -3,8 +3,9 @@
 # Both the directory itself and its contents will be ignored.
 /.idea
 /__pycache__
-
+/venv
 
 /labirinthe.pyc
 /main.pyc
 /perso.pyc
+test.py
