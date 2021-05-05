@@ -5,28 +5,30 @@ class Lab(object):
 
     def __init__(self):
         self.attributes()
+
         self.initialisation()
         self.addobject()
         print(self.format)
 
     def move(self, inputage):
-        print(self.mcgiver.objectnumber)
-        indexchange = self.indexchange(inputage)
+
+        index_change = self.indexchange(inputage)
         try:
-            if self.format[tuple(indexchange)] == '.':
+            if self.format[tuple(index_change)] == '.':
                 self.Movements(inputage)
-            if self.format[tuple(indexchange)] == 'x':
+            if self.format[tuple(index_change)] == 'x':
                 print('c"est un mur')
-            if self.format[tuple(indexchange)] == '2':
+            if self.format[tuple(index_change)] == '2':
                 if self.mcgiver.objectnumber >= 3:
                     self.Movements(inputage)
                 else:
                     print('il te faut 4 objet')
-            if tuple(indexchange) in self.objet:
+            if self.format[tuple(index_change.reverse())] in self.objet:
+                print('ok')
                 self.Movements(inputage)
                 self.mcgiver.Addobject()
 
-        except IndexError:
+        except :
             print("c'est hors du tableau ")
 
     def initsize(self):
@@ -51,18 +53,23 @@ class Lab(object):
     def addobject(self):
         i, j, k, z = False, False, False, False
         for key in self.format:
-            if self.format[key] == '.' and i == (not False):
+            if self.format[key] == '.' and i == (not True):
                 self.format[key] = '6'
+
+                self.objet.append(tuple(key))
                 i = True
-            if self.format[key] == '.' and j == (not False):
+            if self.format[key] == '.' and j == (not True):
                 self.format[key] = '5'
                 j = True
-            if self.format[key] == '.' and k == (not False):
+                self.objet.append(tuple(key))
+            if self.format[key] == '.' and k == (not True):
                 self.format[key] = '4'
                 k = True
-            if self.format[key] == '.' and z == (not False):
+                self.objet.append(tuple(key))
+            if self.format[key] == '.' and z == (not True):
                 self.format[key] = '3'
                 z = True
+                self.objet.append(tuple(key))
 
     def sub_init(self, i, j, x):
         if j == '.':
@@ -73,8 +80,6 @@ class Lab(object):
             self.mcgiver = Perso([x, i])
         elif j == '2':
             self.mechant = (x, i)
-        else:
-            self.objet.append((x, i))
 
     def attributes(self):
         self.mur = []
@@ -121,14 +126,14 @@ class Lab(object):
     # def object(self,inputage):
     #     if self.format[(self.indexchange(inputage))] in [3,4,5]:
 
-    def indexchange(self, inputage):
+    def indexchange(self, inputage) -> object:
         print(self.mcgiver.position)
         if inputage == 1:
             return [self.mcgiver.position[0], self.mcgiver.position[1] - 1]
         if inputage == 2:
             return [self.mcgiver.position[0] + 1, self.mcgiver.position[1]]
         if inputage == 3:
-            return [self.mcgiver.position[0], self.mcgiver.position[1] + 1]
+            return[self.mcgiver.position[0], self.mcgiver.position[1] + 1]
         if inputage == 5:
             return [self.mcgiver.position[0] - 1, self.mcgiver.position[1]]
 
