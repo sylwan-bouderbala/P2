@@ -8,7 +8,6 @@ class Lab(object):
 
         self.initialisation()
         self.addobject()
-        print(self.format)
 
     def move(self, inputage):
 
@@ -23,7 +22,7 @@ class Lab(object):
                     self.Movements(inputage)
                 else:
                     print('il te faut 4 objet')
-            if self.format[tuple(index_change.reverse())] in self.objet:
+            if tuple(index_change) in self.objet:
                 print('ok')
                 self.Movements(inputage)
                 self.mcgiver.Addobject()
@@ -145,5 +144,3 @@ class Lab(object):
 
 
 labir = Lab()
-print(labir.mcgiver)
-print(labir.mcgiver)

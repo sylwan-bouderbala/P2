@@ -86,7 +86,6 @@ class game(object):
             pygame.display.flip()
             pygame.display.update()
             clock.tick(60)
-            print(self.Map.objet)
 
         pygame.quit()
         quit()
