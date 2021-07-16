@@ -7,7 +7,7 @@ from graph import dysplay
 class game(object):
     def __init__(self):
         display_width = 15*20
-        display_height = 15*20
+        display_height = 16*20
 
         self.gameDisplay = pygame.display.set_mode(
             (display_width, display_height)
@@ -17,7 +17,11 @@ class game(object):
         self.Map = Lab()
         self.player = Perso(self.Map.mcgiver)
         self.graphisme = dysplay()
-
+        pygame.font.init()
+        self.myfont = pygame.font.SysFont('Comic Sans MS', 30,)
+    def textobj(self,number):
+        textsurface = self.myfont.render(f'Some Text{ number}', False, (255, 0, 0))
+        return textsurface
     def print(self):
         for i in range(self.Map.size):
             for j in range(self.Map.size):
@@ -53,7 +57,8 @@ class game(object):
                     self.gameDisplay.blit(self.graphisme.floor,
                                           (i * 20, j * 20)
                                           )
-
+        print(self.Map.mcgiver.objectnumber)
+        self.gameDisplay.blit(self.textobj(self.Map.mcgiver.objectnumber),(0*20,15*20))
     def wininggame(self):
         return False
 

@@ -61,10 +61,12 @@ class Lab(object):
                 self.format[key] = '5'
                 j = True
                 self.objet.append(tuple(key))
+
             if self.format[key] == '.' and k == (not True):
                 self.format[key] = '4'
                 k = True
                 self.objet.append(tuple(key))
+
             if self.format[key] == '.' and z == (not True):
                 self.format[key] = '3'
                 z = True
