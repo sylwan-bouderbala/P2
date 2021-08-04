@@ -1,5 +1,5 @@
 from perso import Perso
-
+import random
 
 class Lab(object):
 
@@ -51,26 +51,44 @@ class Lab(object):
 
     def addobject(self):
         i, j, k, z = False, False, False, False
-        for key in self.format:
-            if self.format[key] == '.' and i == (not True):
-                self.format[key] = '6'
+        while i == False :
+            x = random.randint(0,14)
+            y = random.randint(0,14)
+            print(self.format[x,y])
+            if self.format[x,y] == '.':
+                self.format[x,y] = '6'
 
-                self.objet.append(tuple(key))
+                self.objet.append((x,y))
                 i = True
-            if self.format[key] == '.' and j == (not True):
-                self.format[key] = '5'
+        while j == False :
+            x = random.randint(0,14)
+            y = random.randint(0,14)
+
+            if self.format[x,y] == '.' :
+                self.format[x,y] = '5'
+
+                self.objet.append((x,y))
                 j = True
-                self.objet.append(tuple(key))
+        while k == False :
+            x = random.randint(0,14)
+            y = random.randint(0,14)
 
-            if self.format[key] == '.' and k == (not True):
-                self.format[key] = '4'
+            if self.format[x,y] == '.' :
+                self.format[x,y] = '4'
+
+                self.objet.append((x,y))
                 k = True
-                self.objet.append(tuple(key))
+        while z == False :
+            x = random.randint(0,14)
+            y = random.randint(0,14)
 
-            if self.format[key] == '.' and z == (not True):
-                self.format[key] = '3'
+            if self.format[x,y] == '.' :
+                self.format[x,y] = '3'
+
+                self.objet.append((x,y))
                 z = True
-                self.objet.append(tuple(key))
+
+
 
     def sub_init(self, i, j, x):
         if j == '.':
