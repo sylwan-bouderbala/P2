@@ -70,6 +70,10 @@ class game(object):
         crashed = False
 
         while not crashed :
+            for event in pygame.event.get():
+
+                if event.type == pygame.QUIT:
+                    crashed = True
             if self.Map.win()==False :
                 self.gameDisplay.fill((0,0,0))
 
@@ -77,16 +81,14 @@ class game(object):
 
                 self.gameDisplay.blit(winsurface,
                                       (7 * 20, 7 * 20))
-                print('gagner')
                 pygame.display.flip()
 
             else :
                 self.print()
-
                 for event in pygame.event.get():
+
                     if event.type == pygame.QUIT:
                         crashed = True
-                        print('crashed')
                     elif event.type == pygame.KEYDOWN:
                         print(pygame.KEYDOWN)
 

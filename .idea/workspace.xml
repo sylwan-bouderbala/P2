@@ -24,6 +24,8 @@
   <component name="ChangeListManager">
     <list default="true" id="66662f20-ea52-4bfd-aafb-a8506a0c4f32" name="Default Changelist" comment="Code Complet 20/01">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/labirinthe.py" beforeDir="false" afterPath="$PROJECT_DIR$/labirinthe.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -296,6 +298,7 @@
       <workItem from="1628087411182" duration="2571000" />
       <workItem from="1630048756891" duration="41000" />
       <workItem from="1630048852505" duration="980000" />
+      <workItem from="1630137547517" duration="1923000" />
     </task>
     <task id="LOCAL-00001" summary="supression fichier inutile">
       <created>1586375225347</created>

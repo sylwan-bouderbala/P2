@@ -51,16 +51,15 @@ class Lab(object):
 
     def addobject(self):
         i, j, k, z = False, False, False, False
-        while i == False :
+        while not i:
             x = random.randint(0,14)
             y = random.randint(0,14)
-            print(self.format[x,y])
             if self.format[x,y] == '.':
                 self.format[x,y] = '6'
 
                 self.objet.append((x,y))
                 i = True
-        while j == False :
+        while not j:
             x = random.randint(0,14)
             y = random.randint(0,14)
 
@@ -69,7 +68,7 @@ class Lab(object):
 
                 self.objet.append((x,y))
                 j = True
-        while k == False :
+        while not k:
             x = random.randint(0,14)
             y = random.randint(0,14)
 
@@ -78,7 +77,7 @@ class Lab(object):
 
                 self.objet.append((x,y))
                 k = True
-        while z == False :
+        while not z:
             x = random.randint(0,14)
             y = random.randint(0,14)
 
@@ -146,7 +145,6 @@ class Lab(object):
     #     if self.format[(self.indexchange(inputage))] in [3,4,5]:
 
     def indexchange(self, inputage) -> object:
-        print(self.mcgiver.position)
         if inputage == 1:
             return [self.mcgiver.position[0], self.mcgiver.position[1] - 1]
         if inputage == 2:
