@@ -22,7 +22,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="66662f20-ea52-4bfd-aafb-a8506a0c4f32" name="Default Changelist" comment="Code Complet 20/01">
+    <list default="true" id="66662f20-ea52-4bfd-aafb-a8506a0c4f32" name="Default Changelist" comment="Code Complet">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/labirinthe.py" beforeDir="false" afterPath="$PROJECT_DIR$/labirinthe.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
@@ -299,6 +299,8 @@
       <workItem from="1630048756891" duration="41000" />
       <workItem from="1630048852505" duration="980000" />
       <workItem from="1630137547517" duration="1923000" />
+      <workItem from="1630152765306" duration="462000" />
+      <workItem from="1630153239302" duration="1961000" />
     </task>
     <task id="LOCAL-00001" summary="supression fichier inutile">
       <created>1586375225347</created>
@@ -377,7 +379,14 @@
       <option name="project" value="LOCAL" />
       <updated>1620234619506</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Code Complet">
+      <created>1630152880577</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1630152880577</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -401,7 +410,8 @@
     <MESSAGE value="Dernier commit sans Pygame 23/04/20" />
     <MESSAGE value="ajout des pression de de touches (test) 18/01/21" />
     <MESSAGE value="Code Complet 20/01" />
-    <option name="LAST_COMMIT_MESSAGE" value="Code Complet 20/01" />
+    <MESSAGE value="Code Complet" />
+    <option name="LAST_COMMIT_MESSAGE" value="Code Complet" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/P2$labirinthe.coverage" NAME="labirinthe Coverage Results" MODIFIED="1611131271221" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />

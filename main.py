@@ -18,12 +18,14 @@ class game(object):
         self.player = Perso(self.Map.mcgiver)
         self.graphisme = dysplay()
         pygame.font.init()
-        self.myfont = pygame.font.SysFont('Comic Sans MS', 12,)
-    def textobj(self,number , text):
+        self.myfont = pygame.font.SysFont('Comic Sans MS', 12)
+
+    def textobj(self, number, text):
         textsurface = self.myfont.render( text+str(number), False, (255, 0, 0))
         return textsurface
+
     def print(self):
-        if self.Map.win()==True:
+        if self.Map.win():
             for i in range(self.Map.size):
                 for j in range(self.Map.size):
                     if self.Map.format[(i, j)] == "1":
@@ -58,7 +60,10 @@ class game(object):
                         self.gameDisplay.blit(self.graphisme.floor,
                                               (i * 20, j * 20)
                                               )
-            self.gameDisplay.blit(self.textobj(self.Map.mcgiver.objectnumber,'nombre d\'objets'),(0*20,15*20))
+            self.gameDisplay.blit(self.textobj(self.Map.mcgiver.objectnumber,
+                                               'nombre d\'objets'),
+                                  (0*20,15*20)
+                                  )
             pygame.display.flip()
 
 
@@ -74,18 +79,17 @@ class game(object):
 
                 if event.type == pygame.QUIT:
                     crashed = True
-            if self.Map.win()==False :
-                self.gameDisplay.fill((0,0,0))
+                if self.Map.win()==False :
+                    self.gameDisplay.fill((0,0,0))
 
-                winsurface = self.myfont.render('you win', False, (255, 0, 0))
+                    winsurface = self.myfont.render('you win', False, (255, 0, 0))
 
-                self.gameDisplay.blit(winsurface,
+                    self.gameDisplay.blit(winsurface,
                                       (7 * 20, 7 * 20))
-                pygame.display.flip()
+                    pygame.display.flip()
 
-            else :
-                self.print()
-                for event in pygame.event.get():
+                else :
+                    self.print()
 
                     if event.type == pygame.QUIT:
                         crashed = True

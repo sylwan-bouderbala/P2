@@ -1,6 +1,7 @@
 from perso import Perso
 import random
 
+
 class Lab(object):
 
     def __init__(self):
@@ -26,8 +27,7 @@ class Lab(object):
                 print('ok')
                 self.Movements(inputage)
                 self.mcgiver.Addobject()
-
-        except :
+        except:
             print("c'est hors du tableau ")
 
     def initsize(self):
@@ -52,42 +52,40 @@ class Lab(object):
     def addobject(self):
         i, j, k, z = False, False, False, False
         while not i:
-            x = random.randint(0,14)
-            y = random.randint(0,14)
-            if self.format[x,y] == '.':
-                self.format[x,y] = '6'
+            x = random.randint(0, 14)
+            y = random.randint(0, 14)
+            if self.format[x, y] == '.':
+                self.format[x, y] = '6'
 
-                self.objet.append((x,y))
+                self.objet.append((x, y))
                 i = True
         while not j:
-            x = random.randint(0,14)
-            y = random.randint(0,14)
+            x = random.randint(0, 14)
+            y = random.randint(0, 14)
 
-            if self.format[x,y] == '.' :
-                self.format[x,y] = '5'
+            if self.format[x, y] == '.':
+                self.format[x, y] = '5'
 
-                self.objet.append((x,y))
+                self.objet.append((x, y))
                 j = True
         while not k:
-            x = random.randint(0,14)
-            y = random.randint(0,14)
+            x = random.randint(0, 14)
+            y = random.randint(0, 14)
 
-            if self.format[x,y] == '.' :
-                self.format[x,y] = '4'
+            if self.format[x, y] == '.':
+                self.format[x, y] = '4'
 
-                self.objet.append((x,y))
+                self.objet.append((x, y))
                 k = True
         while not z:
-            x = random.randint(0,14)
-            y = random.randint(0,14)
+            x = random.randint(0, 14)
+            y = random.randint(0, 14)
 
-            if self.format[x,y] == '.' :
-                self.format[x,y] = '3'
+            if self.format[x, y] == '.':
+                self.format[x, y] = '3'
 
-                self.objet.append((x,y))
+                self.objet.append((x, y))
                 z = True
-
-
 
     def sub_init(self, i, j, x):
         if j == '.':
